@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Shale App CHallenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guezandy/shale.git"
+  },
+  "author": "Andrew Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guezandy/shale/issues"
+  },
+  "homepage": "https://github.com/guezandy/shale#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.3",
+    "resourcejs": "^1.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+<p>This is the article-add view.</p>
+
+<form role="form">
+  <div class="form-group">
+    <label for="title" class="control-label">Title</label>
+    <input type="text" ng-model="article.title" class="form-control" id="title" placeholder="Enter the movie title">
+  </div>
+  <div class="form-group">
+    <label for="title" class="control-label">Author</label>
+    <input type="text" ng-model="article.author" class="form-control" id="title" placeholder="Enter author">
+  </div>
+    <div class="form-group">
+    <label for="title" class="control-label">Description</label>
+    <input type="text" ng-model="article.description" class="form-control" id="title" placeholder="Enter short Description of article">
+  </div>
+    <div class="form-group">
+    <label for="title" class="control-label">Long Text</label>
+    <input type="text" ng-model="article.longtext" class="form-control" id="title" placeholder="Long text of the article">
+  </div>
+    <div class="form-group">
+    <label for="title" class="control-label">image</label>
+    <input type="text" ng-model="article.image" class="form-control" id="title" placeholder="local file path">
+  </div>
+  <input type="submit" class="btn btn-primary" ng-click="saveArticle()" value="Save">
+</form>

@@ -1,0 +1,32 @@
+<a class="btn btn-primary" href="/#/create/article"><span class="glyphicon glyphicon-plus"></span> Create Article</a>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Author</th>
+    <th>LongText</th>
+    <th>Image</th>
+    <th>Operations</th>
+  </tr></thead>
+  <tbody>
+    <tr ng-repeat="article in articles">
+      <td><a ng-href="/#/article/{{ article._id }}">{{ article.title }}</a></td>
+      <td>{{ article.description }}</td>
+      <td>{{ article.author }}</td>
+      <td>{{ article.longtext }}</td>
+      <td>{{ article.image }}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="/#/article/{{ article._id }}/edit" class="btn btn-default">
+            <span class="glyphicon glyphicon-edit"></span>
+          </a>
+          <a ng-href="/#/article/{{ article._id }}/delete" class="btn btn-danger">
+            <span class="glyphicon glyphicon-remove-circle"></span>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
